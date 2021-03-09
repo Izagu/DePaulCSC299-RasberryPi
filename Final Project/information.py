@@ -68,8 +68,8 @@ class IntruderAlertSystem(Frame): # change Frame later
     def send_email(self, recipient, subject, text):
         'sends email to provided email address'
         
-        GMAIL_USER = 'yanaceyizaguirre@gmail.com'
-        GMAIL_PASS = '86hpW2207!'
+        GMAIL_USER = 'youremail'
+        GMAIL_PASS = 'yourpassword'
         SMTP_SERVER = 'smtp.gmail.com'
         SMTP_PORT = 587
         smtpserver= smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
@@ -85,9 +85,9 @@ class IntruderAlertSystem(Frame): # change Frame later
     ##Send Text
     def send_text(self):
         'sends a text'
-        TO='6304563302@messaging.sprintpcs.com'
-        GMAIL_USER='yanaceyizaguirre@gmail.com'
-        PASS='86hpW2207!'
+        TO='yourphone'
+        GMAIL_USER='youremail'
+        PASS='yourpass'
         SUBJECT= 'ALERT'
         TEXT= 'RP ALARM'
 

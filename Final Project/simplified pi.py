@@ -74,8 +74,8 @@ class activate(Frame):
 
     ##Send Email
     def send_email(self, recipient, subject, text):
-        GMAIL_USER = 'yanaceyizaguirre@gmail.com'
-        GMAIL_PASS = '86hpW2207!'
+        GMAIL_USER = 'email'
+        GMAIL_PASS = 'pass'
         SMTP_SERVER = 'smtp.gmail.com'
         SMTP_PORT = 587
         'sends email to provided email address'

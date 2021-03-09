@@ -83,8 +83,8 @@ class IntruderSystem(Frame):
     def send_email(self, recipient, subject, text):
         'sends email to provided email address'
         
-        GMAIL_USER = 'yanaceyizaguirre@gmail.com'
-        GMAIL_PASS = '86hpW2207!'
+        GMAIL_USER = 'youremail'
+        GMAIL_PASS = 'emailpassword'
         SMTP_SERVER = 'smtp.gmail.com'
         SMTP_PORT = 587                  ##default
 

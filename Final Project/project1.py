@@ -10,13 +10,14 @@ GPIO.setup(18,GPIO.IN)
 GPIO.setup(24,GPIO.OUT)
 
 
-GMAIL_USER= 'yanaceyizaguirre@gmail.com'
-GMAIL_PASS= '86hpW2207!'
+GMAIL_USER= 'youremail'
+GMAIL_PASS= 'yourpassword'
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
 
-##make a GUI for this ish
+##make a GUI for this ish
+
 
 now=datetime.datetime.now()
 text='Intruder alert. Motion detected at' + str(now)
@@ -46,7 +47,8 @@ def buzz(pitch,duration):
 while True:
     input_state = GPIO.input(18)
     if input_state == True:
-        ## String to acknowledge the motion
+        ## String to acknowledge the motion
+
         print('Motion Detected')
 
         ## Set off the alarm
@@ -56,7 +58,8 @@ while True:
         #send_email('pgrzyby@gmail.com,', 'INTRUDER ALERT!',text)
         time.sleep(2)
 
-        ## insert what you actually want to be done when the motion is detected
+        ## insert what you actually want to be done when the motion is detected
+
     else:
         time.sleep(1) ##how often it checks the motion
 
@@ -64,7 +67,8 @@ while True:
 ##    if GPIO.input(23): ##if there is a movement, PIR sensor gives input to GPIO 23
 ##        print("Motion detected")
 ##        GPIO.output(24,True) ##output given to buzzer
-##        time.sleep(1) #buzzer turns on for 1 second
+##        time.sleep(1) #buzzer turns on for 1 second
+
 ##        GPIO.output(24,False)
 ##        time.sleep(5)
 ##    time.sleep(0.1) 
